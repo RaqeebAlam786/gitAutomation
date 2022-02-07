@@ -39,9 +39,9 @@ class TesDEPARTMENT(ui_test_class.UVIIClass):
         self.depart_page.click_Checkout()
         self.depart_page.click_Checkout2()
         self.depart_page.click_payment1()
-        time.sleep(5)
-        self.depart_page.click_Pay()
         time.sleep(10)
+        self.depart_page.click_Pay()
+        time.sleep(12)
 
     def test_EnterZipCode(self):
         self.depart_page.zip("60611")
