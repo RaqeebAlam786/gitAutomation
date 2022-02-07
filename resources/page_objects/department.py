@@ -187,6 +187,10 @@ class Dept(BasePage):
         element = self.driver.find_element_by_xpath('//*[@id="tiffin-services"]/div/div[1]/a')
         self.driver.execute_script("arguments[0].click();", element)
 
+    def click_KamdarTiffin(self):
+        element = self.driver.find_element_by_xpath('//*[@id="tiffin-services"]/div/div[1]/a')
+        self.driver.execute_script("arguments[0].click();", element)
+
     def select_VegThali(self):
         element = self.driver.find_element_by_xpath('//*[@id="TiffinServices"]/div[2]/div[1]/a')
         self.driver.execute_script("arguments[0].click();", element)
