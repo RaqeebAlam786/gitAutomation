@@ -27,7 +27,7 @@ class TesDEPARTMENT(ui_test_class.UVIIClass):
     def tiffin(self):
 
         self.depart_page.click_Tiffin()
-        self.depart_page.click_Chicago()
+        self.depart_page.click_KamdarTiffin()
         self.depart_page.select_VegThali()
         self.depart_page.click_AddToCartVT()#
         self.depart_page.submitVT()
