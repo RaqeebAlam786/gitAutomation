@@ -321,6 +321,18 @@ class Dept(BasePage):
         element = self.driver.find_element_by_xpath('//*[@id="storeproductlist"]/div[2]/div[2]/a')
         self.driver.execute_script("arguments[0].click();", element)
     
+    def click_AmsterdamGin(self):
+        element = self.driver.find_element_by_xpath('//*[@id="img_137923"]')
+        self.driver.execute_script("arguments[0].click();", element)
+
+    def click_AmsterdamGin200ml(self):
+        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/div[2]/div[1]/div/div[2]/div/ul/li[1]/span[1]')
+        self.driver.execute_script("arguments[0].click();", element)
+
+    def click_AddToCartAmsterdamGin(self):
+        element = self.driver.find_element_by_xpath('//*[@id="storeproductlist"]/div[1]/div[2]/a')
+        self.driver.execute_script("arguments[0].click();", element)
+
     def click_ChaiAndCoffee(self):
         element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/div[6]/div/div/div/div/a[4]/img')
         self.driver.execute_script("arguments[0].click();", element)
