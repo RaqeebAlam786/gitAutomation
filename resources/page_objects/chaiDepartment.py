@@ -17,7 +17,7 @@ class CACD(BasePage):
         self.click(ChaiAndCoffee.submit_zip)
 
     def click_ChaiAndCoffee(self):
-        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/div[9]/div/div/div/div/a[14]/img')
+        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/div[9]/div/div/div/div/a[15]/img')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_weekly(self):
