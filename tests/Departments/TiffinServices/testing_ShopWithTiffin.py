@@ -29,13 +29,12 @@ class TesDEPARTMENT(ui_test_class.UVIIClass):
         self.depart_page.click_Tiffin()
         self.depart_page.click_KamdarTiffin()
         self.depart_page.select_VegThali()
-        self.depart_page.click_AddToCartVT()#
+        self.depart_page.click_AddToCartVT()
         self.depart_page.submitVT()
         self.depart_page.click_AddToCartVT()
         self.depart_page.click_MiniCart()
         self.depart_page.click_Checkout()
         self.depart_page.click_Checkout2()
-
         time.sleep(5)
         self.depart_page.click_payment1()
         self.depart_page.click_Pay()
