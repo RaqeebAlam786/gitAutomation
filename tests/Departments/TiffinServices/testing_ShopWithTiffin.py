@@ -35,6 +35,7 @@ class TesDEPARTMENT(ui_test_class.UVIIClass):
         self.depart_page.click_MiniCart()
         self.depart_page.click_Checkout()
         self.depart_page.click_Checkout2()
+
         time.sleep(5)
         self.depart_page.click_payment1()
         self.depart_page.click_Pay()
@@ -64,3 +65,4 @@ class TesDEPARTMENT(ui_test_class.UVIIClass):
         ThankYouLabel = self.depart_page.get_attribute(Department.ThankYou, 'innerHTML')
         print(ThankYouLabel)
         self.assertEqual(self.actual1, ThankYouLabel)
+
