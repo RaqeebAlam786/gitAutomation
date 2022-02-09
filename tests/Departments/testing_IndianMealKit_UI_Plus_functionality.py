@@ -42,8 +42,8 @@ class TesROTIKIT(ui_test_class.UVXVXIVClass):
         self.mealkit_page.zip("60611")
         self.mealkit_page.submit_zip()
         time.sleep(2)
-        for i in range(4):
-            time.sleep(1)
+        for i in range(8):
+            time.sleep(3)
             self.mealkit_page.click_RightArrow()
         self.mealkit_page.click_MealKit()
         self.mealkit_page.click_indianMealKit()
