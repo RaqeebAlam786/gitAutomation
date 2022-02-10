@@ -18,7 +18,7 @@ class RotiBox(BasePage):
 
     def click_RightArrow(self):
         element = self.driver.find_element_by_css_selector(
-            '#searchhide > div.grocerySpecialSlider.clsFoodSpl > div > div > i.right.slick-arrow > img')
+            '#searchhide > div.grocerySpecialSlider.clsFoodSpl.clslowspace > div > div > i.right.slick-arrow > img')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_MealKit(self):
@@ -27,7 +27,7 @@ class RotiBox(BasePage):
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_rotiKit(self):
-        element = self.driver.find_element_by_xpath('//*[@id="home"]/div/div[7]/div/a/div/img')
+        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/div[9]/div/div/div/div/a[9]/img')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_weekly(self):
