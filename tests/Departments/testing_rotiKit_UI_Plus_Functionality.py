@@ -49,7 +49,7 @@ class TesROTIKIT(ui_test_class.UVXVXIIIClass):
         for i in range(4):
             time.sleep(1)
             self.roti_page.click_RightArrow()
-        self.roti_page.click_MealKit()
+        #self.roti_page.click_MealKit()
         self.roti_page.click_rotiKit()
 
     def Payment(self):
