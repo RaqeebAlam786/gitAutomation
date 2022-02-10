@@ -88,7 +88,7 @@ class TesROTIKIT(ui_test_class.UVXVXIIIClass):
             time.sleep(1)
             self.roti_page.click_RightArrow()
             time.sleep(1)
-        self.roti_page.click_MealKit()
+        #self.roti_page.click_MealKit()
         self.roti_page.click_rotiKit()
         label = self.roti_page.get_attribute(RotiKit.RotiLabel, 'innerHTML')
         print(label)
