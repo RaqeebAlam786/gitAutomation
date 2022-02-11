@@ -772,7 +772,7 @@ class IndianGroceryBox:
     enter_zip = (By.ID, 'zipcode')
     submit_zip = (By.ID, 'zipsubmitbtn')
     SearchForProducts = (By.XPATH, '//*[@id="search_box"]')
-    indianGrocery = (By.XPATH, '//*[@id="home"]/div/div[4]/div/a/div/img')
+    indianGrocery = (By.XPATH, '//*[@id="searchhide"]/div[9]/div/div/div/div/a[12]/img')
     indianGroceryLabel = (By.XPATH, '//*[@id="searchhide"]/div/div/ul/li[2]/h1')
     subscription = (By.XPATH, '//*[@id="searchhide"]/section[1]/div/div/div[2]/div[1]/h2')
     shipping = (By.XPATH, '//*[@id="weekly"]/div[1]/p[1]')
