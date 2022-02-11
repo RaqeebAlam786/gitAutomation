@@ -43,10 +43,10 @@ class TesINDIANGROCERY(ui_test_class.UVXVXIIClass):
         self.grocerybox_page.zip("60611")
         self.grocerybox_page.submit_zip()
         time.sleep(2)
-        for i in range(4):
+        for i in range(7):
             time.sleep(1)
             self.grocerybox_page.click_RightArrow()
-        self.grocerybox_page.click_MealKit()
+        #self.grocerybox_page.click_MealKit()
         self.grocerybox_page.click_indianGrocery()
 
     def Payment(self):
@@ -77,10 +77,10 @@ class TesINDIANGROCERY(ui_test_class.UVXVXIIClass):
         self.assertEqual(self.actual3, search)
 
     def test_clickIndian(self):
-        for i in range(4):
+        for i in range(7):
             time.sleep(1)
             self.grocerybox_page.click_RightArrow()
-        self.grocerybox_page.click_MealKit()
+        #self.grocerybox_page.click_MealKit()
         self.grocerybox_page.click_indianGrocery()
         label = self.grocerybox_page.get_attribute(IndianGroceryBox.indianGroceryLabel, 'innerHTML')
         print(label)
