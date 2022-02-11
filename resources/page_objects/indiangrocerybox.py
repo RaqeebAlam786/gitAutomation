@@ -30,23 +30,23 @@ class IndianGrocery(BasePage):
     def click_indianGrocery(self):
         self.driver.implicitly_wait(20)
         self.scroll_to_element(IndianGroceryBox.indianGrocery)
-        element = self.driver.find_element_by_css_selector('#home > div > div:nth-child(6) > div > a > div > img')
+        element = self.driver.find_element_by_css_selector('#searchhide > div.grocerySpecialSlider.clsFoodSpl.clslowspace > div > div > div > div > a:nth-child(12) > img')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_weekly(self):
-        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/section[1]/div/div/div[2]/div[2]/ul/li[1]')
+        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/section[1]/div/div/div[2]/div[2]/ul/li[1]/a')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_Biweekly(self):
-        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/section[1]/div/div/div[2]/div[2]/ul/li[2]')
+        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/section[1]/div/div/div[2]/div[2]/ul/li[2]/a')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_Monthly(self):
-        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/section[1]/div/div/div[2]/div[2]/ul/li[3]')
+        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/section[1]/div/div/div[2]/div[2]/ul/li[3]/a')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_Once(self):
-        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/section[1]/div/div/div[2]/div[2]/ul/li[4]')
+        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/section[1]/div/div/div[2]/div[2]/ul/li[4]/a')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_buildABox(self):
