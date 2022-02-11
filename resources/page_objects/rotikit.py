@@ -31,16 +31,16 @@ class RotiBox(BasePage):
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_weekly(self):
-        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/section[1]/div/div/div[2]/div[2]/ul/li[2]')
+        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/section[1]/div/div/div[2]/div[2]/ul/li[2]/a')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_Biweekly(self):
-        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/section[1]/div/div/div[2]/div[2]/ul/li[3]')
+        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/section[1]/div/div/div[2]/div[2]/ul/li[3]/a')
         self.driver.execute_script("arguments[0].click();", element)
         # self.click(RotiKit.BiWeekly)
 
     def click_Monthly(self):
-        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/section[1]/div/div/div[2]/div[2]/ul/li[4]')
+        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/section[1]/div/div/div[2]/div[2]/ul/li[4]/a')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_Once(self):
