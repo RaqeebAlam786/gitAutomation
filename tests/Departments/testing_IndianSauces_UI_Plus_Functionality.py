@@ -85,7 +85,7 @@ class TesINDIANSAUCES(ui_test_class.UVXVXVClass):
 
     def test_clickIndian(self):
         for i in range(8):
-            time.sleep(1)
+            time.sleep(2)
             self.sauces_page.click_RightArrow()
         self.sauces_page.click_MealKit()
         self.sauces_page.click_sauces()
@@ -242,8 +242,7 @@ class TesINDIANSAUCES(ui_test_class.UVXVXVClass):
         self.assertEqual(self.actual26, label)
 
     #def test_clickvegan(self):
-    #    self.BactToPage()
-    #   self.sauces_page.click_BayArea()
+    #    self.sauces_page.click_BayArea()
     #    self.sauces_page.click_Vegan()
     #    label = self.sauces_page.get_attribute(IndianMealKitAndSauces.clickBay, 'innerHTML')
     #    print(label)
