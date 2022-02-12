@@ -51,7 +51,7 @@ class TesINDIANSAUCES(ui_test_class.UVXVXVClass):
         self.sauces_page.zip("60611")
         self.sauces_page.submit_zip()
         time.sleep(2)
-        for i in range(4):
+        for i in range(8):
             time.sleep(1)
             self.sauces_page.click_RightArrow()
         self.sauces_page.click_MealKit()
@@ -84,7 +84,7 @@ class TesINDIANSAUCES(ui_test_class.UVXVXVClass):
         self.assertEqual(self.actual3, search)
 
     def test_clickIndian(self):
-        for i in range(4):
+        for i in range(8):
             time.sleep(1)
             self.sauces_page.click_RightArrow()
         self.sauces_page.click_MealKit()
