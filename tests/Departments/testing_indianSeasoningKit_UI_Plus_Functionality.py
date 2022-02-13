@@ -42,7 +42,7 @@ class TesINDIANSEASONING(ui_test_class.UVXVXIClass):
         self.indian_page.zip("60611")
         self.indian_page.submit_zip()
         time.sleep(2)
-        for i in range(4):
+        for i in range(8):
             time.sleep(1)
             self.indian_page.click_RightArrow()
         self.indian_page.click_MealKit()
@@ -75,7 +75,7 @@ class TesINDIANSEASONING(ui_test_class.UVXVXIClass):
         self.assertEqual(self.actual3, search)
 
     def test_clickIndian(self):
-        for i in range(4):
+        for i in range(8):
             time.sleep(1)
             self.indian_page.click_RightArrow()
         self.indian_page.click_MealKit()
