@@ -23,12 +23,12 @@ class IndianMeal(BasePage):
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_MealKit(self):
-        self.driver.implicitly_wait(20)
+        self.driver.implicitly_wait(10)
         element = self.driver.find_element_by_css_selector(
             '#searchhide > div.grocerySpecialSlider.clsFoodSpl.clslowspace > div > div > div > div > a:nth-child(13) > img')
         self.driver.execute_script("arguments[0].click();", element)
 
-    def click_indianMealKit(self):
+    def click_indianMealKitSub(self):
         element = self.driver.find_element_by_css_selector(
             '#home > div > div:nth-child(3) > div > a > div > img')
         self.driver.execute_script("arguments[0].click();", element)
