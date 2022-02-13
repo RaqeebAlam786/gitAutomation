@@ -46,7 +46,7 @@ class TesROTIKIT(ui_test_class.UVXVXIVClass):
             time.sleep(3)
             self.mealkit_page.click_RightArrow()
         self.mealkit_page.click_MealKit()
-        self.mealkit_page.click_indianMealKit()
+        self.mealkit_page.click_indianMealKitSub()
 
     def Payment(self):
         self.mealkit_page.click_selectProduct()
@@ -98,7 +98,7 @@ class TesROTIKIT(ui_test_class.UVXVXIVClass):
             time.sleep(1)
             self.mealkit_page.click_RightArrow()
         self.mealkit_page.click_MealKit()
-        self.mealkit_page.click_indianMealKit()
+        self.mealkit_page.click_indianMealKitSub()
         label = self.mealkit_page.get_attribute(IndianMealKit.indianSubscription, 'innerHTML')
         print(label)
         self.assertEqual(self.actual2, label)
