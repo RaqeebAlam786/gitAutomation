@@ -22,7 +22,7 @@ class ONETIME(BasePage):
 
     def click_NationWideShop(self):
         element = self.driver.find_element_by_css_selector(
-            '#searchhide > div.grocerySpecialSlider.clsFoodSpl > div > div > div > div > a:nth-child(4) > img')
+            '#searchhide > div.grocerySpecialSlider.clsFoodSpl > div > div > div > div > a:nth-child(5) > img')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_indianSweet(self):
@@ -34,17 +34,17 @@ class ONETIME(BasePage):
             '//*[@id="searchhide"]/section[1]/div/div/div[2]/div[5]/form/button')
         self.driver.execute_script("arguments[0].click();", element)
 
-    def click_addMasalaMathai(self):
+    def click_addPistaGhari(self):
         element = self.driver.find_element_by_xpath(
             '//*[@id="load_data"]/div[1]/div[4]/a')
         self.driver.execute_script("arguments[0].click();", element)
 
-    def click_plusMasalaMathai(self):
+    def click_plusPistaGhari(self):
         element = self.driver.find_element_by_xpath(
             '//*[@id="load_data"]/div[1]/div[4]/p/a/span[3]')
         self.driver.execute_script("arguments[0].click();", element)
 
-    def click_addToCartMasala(self):
+    def click_addToCartPistaGhari(self):
         element = self.driver.find_element_by_xpath(
             '//*[@id="v-bar-fixed"]/div[2]/button[2]')
         self.driver.execute_script("arguments[0].click();", element)
