@@ -34,7 +34,7 @@ class TesONETIMEORDER(ui_test_class.UVXVXVIIClass):
         self.one_page.EnterEmail("testaccount@quicklly.com")
         self.one_page.EnterPass("123456")
         self.one_page.click_login()
-      
+
     def test_oneTimeOrder(self):
         time.sleep(2)
         self.one_page.click_NationWideShop()
