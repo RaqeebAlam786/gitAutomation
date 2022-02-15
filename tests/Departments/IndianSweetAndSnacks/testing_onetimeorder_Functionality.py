@@ -34,25 +34,21 @@ class TesONETIMEORDER(ui_test_class.UVXVXVIIClass):
         self.one_page.EnterEmail("testaccount@quicklly.com")
         self.one_page.EnterPass("123456")
         self.one_page.click_login()
-        self.one_page.select_dropdown()
-        logoutLabel = self.one_page.get_attribute(OneTime.logout, 'innerHTML')
-        print(logoutLabel)
-        self.assertEqual(self.actual2, logoutLabel)
-
+      
     def test_oneTimeOrder(self):
         time.sleep(2)
         self.one_page.click_NationWideShop()
         self.one_page.click_indianSweet()
         self.one_page.click_buildABox()
-        self.one_page.click_addMasalaMathai()
+        self.one_page.click_addPistaGhari()
         for i in range(4):
-            self.one_page.click_plusMasalaMathai()
+            self.one_page.click_plusPistaGhari()
         quantityLabel = self.one_page.get_attribute(OneTime.quantity, 'innerHTML')
         print(quantityLabel)
         self.assertEqual(self.actual4, quantityLabel)
 
     def test_oneTimeOrderCheckout(self):
-        self.one_page.click_addToCartMasala()
+        self.one_page.click_addToCartPistaGhari()
         time.sleep(2)
         self.one_page.click_Cart()
         self.one_page.click_Checkout()
