@@ -34,7 +34,8 @@ class TesBIWEEKLYORDER(ui_test_class.UVXVXVIVClass):
         self.biweekly_page.EnterEmail("testaccount@quicklly.com")
         self.biweekly_page.EnterPass("123456")
         self.biweekly_page.click_login()
-        
+        self.biweekly_page.select_dropdown()
+
     def test_biWeeklyOrder(self):
         time.sleep(2)
         self.biweekly_page.click_NationWideShop()
