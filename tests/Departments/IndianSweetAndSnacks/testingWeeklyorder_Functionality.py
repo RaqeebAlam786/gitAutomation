@@ -34,7 +34,7 @@ class TesWEEKLYORDER(ui_test_class.UVXVXVIIIClass):
         self.weekly_page.EnterEmail("testaccount@quicklly.com")
         self.weekly_page.EnterPass("123456")
         self.weekly_page.click_login()
-        
+
     def test_weeklyOrder(self):
         time.sleep(2)
         self.weekly_page.click_NationWideShop()
