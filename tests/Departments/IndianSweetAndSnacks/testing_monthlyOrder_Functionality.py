@@ -35,26 +35,22 @@ class TesMONTHLYORDER(ui_test_class.UVXVXVVClass):
         self.monthly_page.EnterEmail("testaccount@quicklly.com")
         self.monthly_page.EnterPass("123456")
         self.monthly_page.click_login()
-        self.monthly_page.select_dropdown()
-        logoutLabel = self.monthly_page.get_attribute(Monthly.logout, 'innerHTML')
-        print(logoutLabel)
-        self.assertEqual(self.actual2, logoutLabel)
-
+     
     def test_monthlyOrder(self):
         time.sleep(2)
         self.monthly_page.click_NationWideShop()
         self.monthly_page.click_indianSweet()
         self.monthly_page.click_monthly()
         self.monthly_page.click_buildABox()
-        self.monthly_page.click_addMasalaMathai()
+        self.monthly_page.click_addPistaGhari()
         for i in range(4):
-            self.monthly_page.click_plusMasalaMathai()
+            self.monthly_page.click_plusPistaGhari()
         quantityLabel = self.monthly_page.get_attribute(Monthly.quantity, 'innerHTML')
         print(quantityLabel)
         self.assertEqual(self.actual4, quantityLabel)
 
     def test_monthlyOrderCheckout(self):
-        self.monthly_page.click_addToCartMasala()
+        self.monthly_page.click_addToCartPistaGhari()
         time.sleep(2)
         self.monthly_page.click_Cart()
         self.monthly_page.click_Checkout()
