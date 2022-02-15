@@ -34,27 +34,23 @@ class TesBIWEEKLYORDER(ui_test_class.UVXVXVIVClass):
         self.biweekly_page.EnterEmail("testaccount@quicklly.com")
         self.biweekly_page.EnterPass("123456")
         self.biweekly_page.click_login()
-        self.biweekly_page.select_dropdown()
-        logoutLabel = self.biweekly_page.get_attribute(BiWeekly.logout, 'innerHTML')
-        print(logoutLabel)
-        self.assertEqual(self.actual2, logoutLabel)
-
+        
     def test_biWeeklyOrder(self):
         time.sleep(2)
         self.biweekly_page.click_NationWideShop()
         self.biweekly_page.click_indianSweet()
         self.biweekly_page.click_biweekly()
         self.biweekly_page.click_buildABox()
-        self.biweekly_page.click_addMasalaMathai()
+        self.biweekly_page.click_addPistaGhari()
         for i in range(4):
             time.sleep(2)
-            self.biweekly_page.click_plusMasalaMathai()
+            self.biweekly_page.click_plusPistaGhari()
         quantityLabel = self.biweekly_page.get_attribute(BiWeekly.quantity, 'innerHTML')
         print(quantityLabel)
         self.assertEqual(self.actual4, quantityLabel)
 
     def test_biWeeklyOrderCheckout(self):
-        self.biweekly_page.click_addToCartMasala()
+        self.biweekly_page.click_addToCartPistaGhari()
         time.sleep(2)
         self.biweekly_page.click_Cart()
         self.biweekly_page.click_Checkout()
