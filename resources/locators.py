@@ -1033,7 +1033,7 @@ class BiWeekly:
     ThankYou = (By.XPATH, '//*[@id="innerlist-products"]/h1')
     quantity = (By.XPATH, '//*[@id="load_data"]/div[1]/div[4]/p/a/span[2]')
     logout = (By.XPATH, '//*[@id="searchhide"]/header/div[3]/div/div/ul/li[6]/a')
-    BiWeekly = (By.XPATH, '//*[@id="searchhide"]/section[1]/div/div/div[2]/div[2]/ul/li[3]')
+    BiWeekly = (By.XPATH, '//*[@id="searchhide"]/section[1]/div/div/div[2]/div[2]/ul/li[3]/a')
 
 class Monthly:
     enter_zip = (By.ID, 'zipcode')
