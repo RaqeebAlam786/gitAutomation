@@ -35,7 +35,7 @@ class TesMONTHLYORDER(ui_test_class.UVXVXVVClass):
         self.monthly_page.EnterEmail("testaccount@quicklly.com")
         self.monthly_page.EnterPass("123456")
         self.monthly_page.click_login()
-     
+
     def test_monthlyOrder(self):
         time.sleep(2)
         self.monthly_page.click_NationWideShop()
