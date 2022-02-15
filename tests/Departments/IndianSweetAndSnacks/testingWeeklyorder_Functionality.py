@@ -34,27 +34,23 @@ class TesWEEKLYORDER(ui_test_class.UVXVXVIIIClass):
         self.weekly_page.EnterEmail("testaccount@quicklly.com")
         self.weekly_page.EnterPass("123456")
         self.weekly_page.click_login()
-        self.weekly_page.select_dropdown()
-        logoutLabel = self.weekly_page.get_attribute(Weekly.logout, 'innerHTML')
-        print(logoutLabel)
-        self.assertEqual(self.actual2, logoutLabel)
-
+        
     def test_weeklyOrder(self):
         time.sleep(2)
         self.weekly_page.click_NationWideShop()
         self.weekly_page.click_indianSweet()
         self.weekly_page.click_weekly()
         self.weekly_page.click_buildABox()
-        self.weekly_page.click_addMasalaMathai()
+        self.weekly_page.click_addPistaGhari()
         for i in range(4):
             time.sleep(2)
-            self.weekly_page.click_plusMasalaMathai()
+            self.weekly_page.click_plusPistaGhari()
         quantityLabel = self.weekly_page.get_attribute(Weekly.quantity, 'innerHTML')
         print(quantityLabel)
         self.assertEqual(self.actual4, quantityLabel)
 
     def test_weeklyOrderCheckout(self):
-        self.weekly_page.click_addToCartMasala()
+        self.weekly_page.click_addToCartPistaGhari()
         time.sleep(2)
         self.weekly_page.click_Cart()
         self.weekly_page.click_Checkout()
