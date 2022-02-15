@@ -46,6 +46,6 @@ class TesEDITITEM(ui_test_class.UVXVXVVIIClass):
         self.edit_page.EnterEmail("testaccount@quicklly.com")
         self.edit_page.EnterPass("123456")
         self.edit_page.click_login()
-        
+
     def test_editItem(self):
         self.edit()
