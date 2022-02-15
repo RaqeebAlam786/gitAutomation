@@ -32,10 +32,10 @@ class TesMAXIMUMITEM(ui_test_class.UVXVXVVIClass):
         self.max_page.click_indianSweet()
         self.max_page.click_monthly()
         self.max_page.click_buildABox()
-        self.max_page.click_addMasalaMathai()
+        self.max_page.click_addPistaGhari()
         for i in range(5):
-            self.max_page.click_plusMasalaMathai()
-        try:
+            self.max_page.click_plusPistaGhari()
+            try:
             WebDriverWait(self.driver, 5).until(EC.alert_is_present())
             alert = self.driver.switch_to.alert
             self.text = alert.text
@@ -58,11 +58,7 @@ class TesMAXIMUMITEM(ui_test_class.UVXVXVVIClass):
         self.max_page.EnterEmail("testaccount@quicklly.com")
         self.max_page.EnterPass("123456")
         self.max_page.click_login()
-        self.max_page.select_dropdown()
-        logoutLabel = self.max_page.get_attribute(Maximum.logout, 'innerHTML')
-        print(logoutLabel)
-        self.assertEqual(self.actual2, logoutLabel)
-
+        
     def test_maximumPopup(self):
         self.alert()
         self.assertEqual(self.actual4, self.text)
