@@ -28,9 +28,9 @@ class TesEDITITEM(ui_test_class.UVXVXVVIIClass):
         self.edit_page.click_indianSweet()
         self.edit_page.click_monthly()
         self.edit_page.click_buildABox()
-        self.edit_page.click_addMasalaMathai()
+        self.edit_page.click_addPistaGhari()
         for i in range(4):
-            self.edit_page.click_plusMasalaMathai()
+            self.edit_page.click_plusPistaGhari()
         self.edit_page.click_deleteItem()
 
     def test_EnterZipCode(self):
@@ -46,10 +46,6 @@ class TesEDITITEM(ui_test_class.UVXVXVVIIClass):
         self.edit_page.EnterEmail("testaccount@quicklly.com")
         self.edit_page.EnterPass("123456")
         self.edit_page.click_login()
-        self.edit_page.select_dropdown()
-        logoutLabel = self.edit_page.get_attribute(Edit.logout, 'innerHTML')
-        print(logoutLabel)
-        self.assertEqual(self.actual2, logoutLabel)
-
+        
     def test_editItem(self):
         self.edit()
