@@ -437,4 +437,17 @@ class Dept(BasePage):
 
     def click_SearchButton(self):
         self.click(Department.searchButton)
+        
+    def click_HouseHold(self):
+        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/div[12]/div[1]/div/div/a[8]/img')
+        self.driver.execute_script("arguments[0].click();", element)
+
+    def click_AddJiffyFoilPan(self):
+        element = self.driver.find_element_by_xpath('//*[@id="load_data"]/div[1]/div/div/div/div[1]/div/a')
+        self.driver.execute_script("arguments[0].click();", element)
+
+    def click_AddHemVanilla(self):
+        element = self.driver.find_element_by_xpath('//*[@id="load_data"]/div[1]/div/div/div/div[2]/div/a')
+        self.driver.execute_script("arguments[0].click();", element)
+
 
