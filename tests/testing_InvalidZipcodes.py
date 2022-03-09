@@ -9,7 +9,7 @@ class TesIZ(ui_test_class.UVXVClass):
     invalid_page: InvalidZipcodes
 
     expected = "Please fill out this field."
-    expected1 = "Please lengthen this text to 5 characters or more (you are currently using 3 characters)."
+    expected1 = ""
 
     @classmethod
     def setUpClass(cls):
