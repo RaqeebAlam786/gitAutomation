@@ -37,10 +37,10 @@ class TesCART(ui_test_class.UVClass):
     actual25 = "Items in your  cart"
     actual26 = "Remove"
     actual27 = "eVoucher"
-    actual28 = "Reward Point (0)"
-    actual29 = "My Wallet (0)"
+    actual28 = "Reward Point (1000)"
+    actual29 = "My Wallet (100)"
     actual30 = "Your e-voucher Code option"
-    actual31 = " * A maximum of one vouher is applicable for an order"
+    actual31 = " * A maximum of one voucher is applicable for an order"
     actual32 = "Your Reward Point (optional)*"
     actual34 = "Your Wallet Balance"
     actual33 = " * Reward Point applicable"
@@ -85,7 +85,7 @@ class TesCART(ui_test_class.UVClass):
     actual73 = "12.95"
     actual74 = "12.99"
     actual75 = "13.04"
-    actual76 = "Invalid Coupon.!"
+    actual76 = ""
     actual77 = "Thank you"
 
     @classmethod
@@ -164,11 +164,6 @@ class TesCART(ui_test_class.UVClass):
         price = self.cart_page.get_attribute(MiniCart.PriceOfItem, 'innerHTML')
         print(price)
         self.assertEqual(self.actual55, price)
-
-    def test_image(self):
-        imageSource = self.cart_page.get_attribute(MiniCart.image, 'src')
-        print(imageSource)
-        self.assertEqual(self.actual10, imageSource)
 
     def test_quantity(self):
         self.cart_page.click_MiniCart()
@@ -306,12 +301,7 @@ class TesCART(ui_test_class.UVClass):
         print(reward_label)
         self.assertEqual(self.actual28, reward_label)
 
-    def test_click_wallet(self):
-        time.sleep(15)
-        self.cart_page.click_wallet()
-        wEmpty = self.cart_page.get_attribute(MiniCart.walletEmpty, 'innerHTML')
-        print(wEmpty)
-        self.assertEqual(self.actual35, wEmpty)
+
 
     def test_wallet_label(self):
         wallet_label = self.cart_page.get_attribute(MiniCart.wallet_label, 'innerHTML')
@@ -354,11 +344,6 @@ class TesCART(ui_test_class.UVClass):
         print(balance)
         self.assertEqual(self.actual34, balance)
 
-    def test_walletEmpty(self):
-        time.sleep(15)
-        wEmpty = self.cart_page.get_attribute(MiniCart.walletEmpty, 'innerHTML')
-        print(wEmpty)
-        self.assertEqual(self.actual35, wEmpty)
 
     def test_order_summary(self):
         self.cart_page.scroll_to_element(MiniCart.orderSummary)
