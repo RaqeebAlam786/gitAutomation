@@ -9,11 +9,11 @@ from selenium.webdriver.common.keys import Keys
 
 Enter_Email = (By.XPATH, '//*[@id="root"]/div/div/div[2]/div[2]/form/div[1]/input')
 
-ser = Service("/usr/bin/chromedriver")
-op = webdriver.ChromeOptions()
-s = webdriver.Chrome(service=ser, options=op)
-driver = webdriver.Chrome('/usr/bin/chromedriver')
-driver.get("https:uat.goquicklly.com")
+#ser = Service("/usr/bin/chromedriver")
+#op = webdriver.ChromeOptions()
+#s = webdriver.Chrome(service=ser, options=op)
+#driver = webdriver.Chrome('/usr/bin/chromedriver')
+#driver.get("https:uat.goquicklly.com")
 elem = driver.find_element_by_name("q")
 time.sleep(3)
 elem.clear()
