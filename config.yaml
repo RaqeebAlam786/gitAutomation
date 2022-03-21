@@ -7,7 +7,8 @@ webdriver:
 
 portal_ui:
 
-  base_url: http://www.uat.goquicklly.com/
+  base_url: https://dashboard.instacart.com/
   admin_user: Excellence Delivered
   admin_password: 1234
 
+#http://www.uat.goquicklly.com/
