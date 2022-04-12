@@ -22,7 +22,7 @@ class BBQKIT(BasePage):
 
     def click_MealKit(self):
         element = self.driver.find_element_by_css_selector(
-            '#searchhide > div.grocerySpecialSlider.clsFoodSpl > div > div > div > div > a:nth-child(13) > img')
+            '#searchhide > div.grocerySpecialSlider.clsFoodSpl.clslowspace > div > div > div > div > a:nth-child(13) > img')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_bbqKit(self):
@@ -33,7 +33,7 @@ class BBQKIT(BasePage):
         self.click(BBQ.AllGrills)
 
     def click_VegGrills(self):
-        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/div[2]/div[3]/ul/li[2]/a')
+        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/div[2]/div[3]/ul/li[1]/a')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_NonVeg(self):
