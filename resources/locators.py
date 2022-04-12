@@ -948,7 +948,7 @@ class BBQ:
     submit_zip = (By.ID, 'zipsubmitbtn')
     SearchForProducts = (By.XPATH, '//*[@id="search_box"]')
     bbqKit = (By.XPATH, '//*[@id="home"]/div/div[9]/div/a/div/img')
-    bbqLabel = (By.XPATH, '//*[@id="searchhide"]/div[1]/div/ul/li[2]/h1')
+    bbqLabel = (By.XPATH, '//*[@id="searchhide"]/div[2]/div[1]/h2')
     chilling = (By.XPATH, '//*[@id="searchhide"]/div[2]/div[1]/h2')
     menu = (By.XPATH, '//*[@id="searchhide"]/div[2]/div[2]/h3')
     AllGrills = (By.XPATH, '//*[@id="searchhide"]/div[2]/div[3]/ul/li[1]/a')
