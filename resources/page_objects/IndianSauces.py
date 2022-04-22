@@ -27,7 +27,7 @@ class Sauces(BasePage):
             '#searchhide > div.grocerySpecialSlider.clsFoodSpl.clslowspace > div > div > div > div > a:nth-child(13) > img')
         self.driver.execute_script("arguments[0].click();", element)
 
-    def click_sauces(self):
+    def click_Oragnicsauces(self):
         element = self.driver.find_element_by_xpath('//*[@id="home"]/div/div[9]/div/a/div/img')
         self.driver.execute_script("arguments[0].click();", element)
 
@@ -114,4 +114,8 @@ class Sauces(BasePage):
 
     def click_Checkout2(self):
         element = self.driver.find_element_by_xpath('//*[@id="dvFoodSuggestPopup"]/div/div/a')
+        self.driver.execute_script("arguments[0].click();", element)
+
+    def click_Sauces(self):
+        element = self.driver.find_element_by_xpath('//*[@id="nationwide"]/div[2]/div[2]/a')
         self.driver.execute_script("arguments[0].click();", element)
