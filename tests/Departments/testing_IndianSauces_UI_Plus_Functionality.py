@@ -4,13 +4,12 @@ from resources.page_objects.IndianSauces import IndianMealKitAndSauces
 from resources.page_objects.IndianSauces import Sauces
 from selenium.webdriver.support.color import Color
 
-
 class TesINDIANSAUCES(ui_test_class.UVXVXVClass):
     sauces_page: IndianMealKitAndSauces
     sauces_page: Sauces
 
     actual1 = "EXPLORE OUR MENUS"
-    actual2 = "Instant Pot Chicago IL"
+    actual2 = "Sauces"
     actual3 = "Search for products..."
     actual4 = "Meal Kit"
     actual5 = "Sauces"
@@ -34,7 +33,7 @@ class TesINDIANSAUCES(ui_test_class.UVXVXVClass):
     actual23 = "Nut Free Meal Kit"
     actual24 = "Vegan Meal Kit"
     actual25 = "Vegan Meal Kit"
-    actual26 = "Bay Area"
+    actual26 = "Indian Instant Pot"
     actual27 = "Thank you"
 
     @classmethod
@@ -88,7 +87,8 @@ class TesINDIANSAUCES(ui_test_class.UVXVXVClass):
             time.sleep(2)
             self.sauces_page.click_RightArrow()
         self.sauces_page.click_MealKit()
-        self.sauces_page.click_sauces()
+        self.sauces_page.click_Oragnicsauces()
+        self.sauces_page.click_Sauces()
         label = self.sauces_page.get_attribute(IndianMealKitAndSauces.instantPot, 'innerHTML')
         print(label)
         self.assertEqual(self.actual2, label)
@@ -176,6 +176,8 @@ class TesINDIANSAUCES(ui_test_class.UVXVXVClass):
         self.assertEqual(self.actual18, label)
 
     def test_clickbayArea(self):
+        time.sleep(3)
+        self.sauces_page.click_backToPage()
         self.sauces_page.click_BayArea()
         colorLabel = self.driver.find_element_by_css_selector(
             '#searchhide > div.clsTiffinMenus > ul > li:nth-child(2) > a').value_of_css_property(
@@ -228,6 +230,7 @@ class TesINDIANSAUCES(ui_test_class.UVXVXVClass):
         self.assertEqual(self.actual25, label)
 
     def test_clickeat(self):
+        # self.sauces_page.click_backToPage()
         self.sauces_page.click_Eat()
         label = self.sauces_page.get_attribute(IndianMealKitAndSauces.clickBay, 'innerHTML')
         print(label)
