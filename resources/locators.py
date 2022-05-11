@@ -271,7 +271,7 @@ class Department:
     AddToCartLG = (By.XPATH, '//*[@id="searchhide"]/div[10]/div/section[2]/div/a[1]')
     addSecondItem = (By.XPATH, '//*[@id="img_51875"]')
     AddToCartP = (By.XPATH, '//*[@id="searchhide"]/div[10]/div/section[2]/div/a[1]')
-    food = (By.XPATH, '//*[@id="searchhide"]/div[9]/div/div/div/div/a[3]/img')
+    food = (By.XPATH, '//*[@id="searchhide"]/div[9]/div/div/div/div/a[4]/img')
     MakkiFastFood = (By.XPATH, '//*[@id="load_data"]/div[2]/a')
     AddTenders = (By.XPATH, '//*[@id="load_data"]/div[2]/div/div[2]/a')
     TendersAddToCart = (By.XPATH, '//*[@id="dvDialog-Custom"]/div/div[2]/a')
