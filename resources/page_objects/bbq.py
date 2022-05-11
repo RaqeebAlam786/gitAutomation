@@ -20,13 +20,13 @@ class BBQKIT(BasePage):
             '#searchhide > div.grocerySpecialSlider.clsFoodSpl > div > div > i.right.slick-arrow > img')
         self.driver.execute_script("arguments[0].click();", element)
 
-    def click_MealKit(self):
+        def click_MealKit(self):
         element = self.driver.find_element_by_css_selector(
-            '#searchhide > div.grocerySpecialSlider.clsFoodSpl.clslowspace > div > div > div > div > a:nth-child(13) > img')
+            '#searchhide > div.grocerySpecialSlider.clsFoodSpl.clslowspace > div > div > div > div > a:nth-child(14) > img')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_bbqKit(self):
-        element = self.driver.find_element_by_css_selector('#home > div > div:nth-child(10) > div > a > div > img')
+        element = self.driver.find_element_by_css_selector('#home > div > div:nth-child(11) > div > a > div > img')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_AllGrills(self):
