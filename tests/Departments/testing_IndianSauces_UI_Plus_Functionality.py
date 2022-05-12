@@ -54,7 +54,7 @@ class TesINDIANSAUCES(ui_test_class.UVXVXVClass):
             time.sleep(1)
             self.sauces_page.click_RightArrow()
         self.sauces_page.click_MealKit()
-        self.sauces_page.click_sauces()
+        self.sauces_page.click_Oragnicsauces()
 
     def Payment(self):
         self.sauces_page.click_Shahi()
