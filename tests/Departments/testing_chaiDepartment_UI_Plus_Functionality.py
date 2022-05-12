@@ -71,10 +71,11 @@ class TesCHAIDEPARTMENT(ui_test_class.UVXVIXClass):
         self.assertEqual(self.actual3, search)
 
     def test_clickChaiDepartment(self):
-        time.sleep(2)
-        for i in range(11):
-            time.sleep(1)
+        time.sleep(3)
+        for i in range(12):
+            time.sleep(2)
             self.chai_page.click_RightArrow()
+        time.sleep(3)
         self.chai_page.click_ChaiAndCoffee()
         headingLabel = self.chai_page.get_attribute(ChaiAndCoffee.heading1, 'textContent')
         print(headingLabel)
@@ -88,6 +89,7 @@ class TesCHAIDEPARTMENT(ui_test_class.UVXVIXClass):
         self.assertEqual(self.actual16, thankYou)
 
     def test_monthly(self):
+        time.sleep(2)
         self.chai_page.click_Monthly()
         self.Payment()
         thankYou = self.chai_page.get_attribute(ChaiAndCoffee.ThankYou, 'innerHTML')
