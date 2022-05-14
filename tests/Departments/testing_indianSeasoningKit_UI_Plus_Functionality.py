@@ -135,7 +135,7 @@ class TesINDIANSEASONING(ui_test_class.UVXVXIClass):
         self.assertEqual(self.actual12, label)
 
     def test_clickweekly(self):
-        self.indian_page.click_ISK()
+        # self.indian_page.click_ISK()
         self.indian_page.click_weekly()
         colorLabel = self.driver.find_element_by_css_selector(
             '#seasn1 > div:nth-child(1) > center > ul > li:nth-child(2)').value_of_css_property('background-color')
@@ -209,16 +209,17 @@ class TesINDIANSEASONING(ui_test_class.UVXVXIClass):
         print(label)
         self.assertEqual(self.actual15, label)
 
-    def test_clickselectProducts(self):
-        self.indian_page.click_selectProduct()
-        label = self.indian_page.get_attribute(IndianSeasoningKit.OrderSeasoningKit, 'innerHTML')
-        print(label)
-        self.assertEqual(self.actual16, label)
-
-    def test_clickselectProducts2(self):
-        self.indian_page.click_ISK()
-        self.indian_page.click_selectProduct2()
-        label = self.indian_page.get_attribute(IndianSeasoningKit.labelEasy, 'innerHTML')
-        print(label)
-        self.assertEqual(self.actual17, label)
+    # def test_clickselectProducts(self):
+    #     self.indian_page.click_indianSeasoning()
+    #     self.indian_page.click_selectProduct()
+    #     label = self.indian_page.get_attribute(IndianSeasoningKit.OrderSeasoningKit, 'innerHTML')
+    #     print(label)
+    #     self.assertEqual(self.actual16, label)
+    #
+    # def test_clickselectProducts2(self):
+    #     self.indian_page.click_ISK()
+    #     self.indian_page.click_selectProduct2()
+    #     label = self.indian_page.get_attribute(IndianSeasoningKit.labelEasy, 'innerHTML')
+    #     print(label)
+    #     self.assertEqual(self.actual17, label)
 
