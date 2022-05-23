@@ -49,8 +49,8 @@ class ContinueAsGuest:
     email_error = (By.XPATH, '//*[@id="frmGuestAddress"]/div[5]/label')
     user_login = (By.XPATH, '//*[@id="signupformmodal"]/div/div/div[2]/div/div[1]/div/div[1]/p[3]/span')
     needanaccount_signin = (By.XPATH, '//*[@id="signupformmodal"]/div/div/div[2]/div/div[1]/div/div[1]/p[1]/span')
-    invalid_mobile = (By.XPATH, '//*[@id="mobile-error"]')
-    invalid_Email = (By.XPATH, '//*[@id="email-error"]')
+    invalid_mobile = (By.XPATH, '//*[@id="frmGuestAddress"]/div[5]/label')
+    invalid_Email = (By.XPATH, '//*[@id="frmGuestAddress"]/div[6]/label')
     googleError = (By.XPATH, '//*[@id="street_number2-error"]')
 
 
