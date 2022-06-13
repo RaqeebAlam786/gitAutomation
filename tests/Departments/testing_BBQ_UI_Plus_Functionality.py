@@ -64,8 +64,8 @@ class TesINDIANBBQKIT(ui_test_class.UVXVXVIClass):
 
 #    @allure.severity(allure.severity_level.NORMAL)
     def test_clickIndian(self):
-        for i in range(8):
-            time.sleep(3)
+        for i in range(9):
+            time.sleep(2)
             self.bbq_page.click_RightArrow()
 
         self.bbq_page.click_MealKit()
