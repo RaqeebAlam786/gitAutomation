@@ -733,7 +733,7 @@ class IndianSeasoningKit:
     submit_zip = (By.ID, 'zipsubmitbtn')
     SearchForProducts = (By.XPATH, '//*[@id="search_box"]')
     indianSeasoning = (By.XPATH, '//*[@id="home"]/div/div[3]/div/a/div/img')
-    IndianSeasoningLabel = (By.XPATH, '//*[@id="searchhide"]/div[2]/ul/li[2]/h1')
+    IndianSeasoningLabel = (By.XPATH, '//*[@id="searchhide"]/div[2]/ul/li[3]/h1')
     chooseyourmenu = (By.XPATH, '//*[@id="searchhide"]/div[3]/h2/b')
     flavours = (By.XPATH, '//*[@id="meal-kit"]/div[2]/div/div/div[1]/h2')
     blackPepperImage = (By.XPATH, '//*[@id="meal-kit"]/div[2]/div/div/div[2]/ul/li[1]/img')
