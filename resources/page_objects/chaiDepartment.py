@@ -15,7 +15,7 @@ class CACD(BasePage):
 
     def submit_zip(self):
         self.click(ChaiAndCoffee.submit_zip)
-   
+
     def click_ChaiAndCoffee(self):
         element = self.driver.find_element_by_css_selector('#searchhide > div.grocerySpecialSlider.clsFoodSpl.clslowspace > div > div > div > div > a:nth-child(16) > img')
         self.driver.execute_script("arguments[0].click();", element)
@@ -29,7 +29,7 @@ class CACD(BasePage):
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_Monthly(self):
-        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/section[1]/div/div/div[2]/div[2]/ul/li[4]')
+        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/section[1]/div/div/div[2]/div[2]/ul/li[4]/a')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_once(self):
@@ -42,7 +42,7 @@ class CACD(BasePage):
 
     def click_backToPage(self):
         element = self.driver.find_element_by_xpath(
-            '/html/body/div[8]/ul/li[2]/a')
+            '/html/body/header/a/img')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_RightArrow(self):
@@ -76,7 +76,7 @@ class CACD(BasePage):
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_MiniCart(self):
-        element = self.driver.find_element_by_xpath('/html/body/header/div[4]/a')
+        element = self.driver.find_element_by_xpath('/html/body/header/div[4]/a/span')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_Checkout(self):
