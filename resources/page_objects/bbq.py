@@ -26,7 +26,7 @@ class BBQKIT(BasePage):
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_bbqKit(self):
-        element = self.driver.find_element_by_css_selector('#home > div > div:nth-child(11) > div > a > div > img')
+        element = self.driver.find_element_by_css_selector('#home > div > div:nth-child(12) > div > a > div > img')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_AllGrills(self):
