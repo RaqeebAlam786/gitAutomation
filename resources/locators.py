@@ -902,7 +902,7 @@ class IndianMealKitAndSauces:
     submit_zip = (By.ID, 'zipsubmitbtn')
     SearchForProducts = (By.XPATH, '//*[@id="search_box"]')
     Sauces = (By.XPATH, '//*[@id="home"]/div/div[8]/div/a/div/img')
-    instantPot = (By.XPATH, '//*[@id="searchhide"]/div[2]/ul/li[2]/h1')
+    instantPot = (By.XPATH, '//*[@id="searchhide"]/div[1]/div[1]/ul/li[4]/h1')
     explore = (By.XPATH, '//*[@id="searchhide"]/div[3]/h2')
     sauces = (By.XPATH, '//*[@id="nationwide"]/div[2]/div[1]/h3')
     mealKit = (By.XPATH, '//*[@id="nationwide"]/div[2]/div[2]/h3')
