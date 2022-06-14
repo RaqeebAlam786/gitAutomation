@@ -78,7 +78,8 @@ class NeedAnAccount:
     mobile_invalid = (By.XPATH, '//*[@id="reg-form"]/div[5]/label')
     address_invalid = (By.XPATH, '//*[@id="street_number-error"]')
     email_invalid = (By.XPATH, '//*[@id="reg-form"]/div[6]/label')
-    googleError = (By.XPATH, '//*[@id="reg-form"]/div[3]/label[2]')
+    googleError = (By.XPATH, '//*[@id="reg-form"]/div[3]/label')
+
 
 
 class ForgetPassword:
