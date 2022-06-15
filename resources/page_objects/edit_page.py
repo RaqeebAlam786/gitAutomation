@@ -23,11 +23,11 @@ class EDITITEM(BasePage):
 
     def click_NationWideShop(self):
         element = self.driver.find_element_by_css_selector(
-            '#searchhide > div.grocerySpecialSlider.clsFoodSpl > div > div > div > div > a:nth-child(5) > img')
+            '#searchhide > div.grocerySpecialSlider.clsFoodSpl.clslowspace > div > div > div > div > a:nth-child(6) > img')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_indianSweet(self):
-        element = self.driver.find_element_by_xpath('//*[@id="home"]/div/div[2]/div/a/div/img')
+        element = self.driver.find_element_by_xpath('//*[@id="home"]/div/div[4]/div/a/div/img')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_buildABox(self):
