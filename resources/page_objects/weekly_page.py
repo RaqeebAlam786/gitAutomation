@@ -20,7 +20,7 @@ class WEEKLY(BasePage):
             '#searchhide > div.grocerySpecialSlider.clsFoodSpl > div > div > i.right.slick-arrow > img')
         self.driver.execute_script("arguments[0].click();", element)
 
-     def click_NationWideShop(self):
+    def click_NationWideShop(self):
         element = self.driver.find_element_by_css_selector(
             '#searchhide > div.grocerySpecialSlider.clsFoodSpl.clslowspace > div > div > div > div > a:nth-child(6) > img')
         self.driver.execute_script("arguments[0].click();", element)
