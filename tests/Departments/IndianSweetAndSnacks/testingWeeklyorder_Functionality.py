@@ -37,6 +37,8 @@ class TesWEEKLYORDER(ui_test_class.UVXVXVIIIClass):
 
     def test_weeklyOrder(self):
         time.sleep(2)
+        for i in range(2):
+            self.weekly_page.click_RightArrow()
         self.weekly_page.click_NationWideShop()
         self.weekly_page.click_indianSweet()
         self.weekly_page.click_weekly()
