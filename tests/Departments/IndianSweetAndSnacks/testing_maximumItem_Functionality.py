@@ -28,6 +28,8 @@ class TesMAXIMUMITEM(ui_test_class.UVXVXVVIClass):
 
     def alert(self):
         time.sleep(2)
+        for i in range(2):
+            self.max_page.click_RightArrow()
         self.max_page.click_NationWideShop()
         self.max_page.click_indianSweet()
         self.max_page.click_monthly()
