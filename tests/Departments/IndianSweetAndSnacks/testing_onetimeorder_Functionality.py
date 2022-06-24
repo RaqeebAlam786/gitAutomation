@@ -37,6 +37,8 @@ class TesONETIMEORDER(ui_test_class.UVXVXVIIClass):
 
     def test_oneTimeOrder(self):
         time.sleep(2)
+        for i in range(2):
+            self.one_page.click_RightArrow()
         self.one_page.click_NationWideShop()
         self.one_page.click_indianSweet()
         self.one_page.click_buildABox()
