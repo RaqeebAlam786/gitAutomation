@@ -38,6 +38,8 @@ class TesMONTHLYORDER(ui_test_class.UVXVXVVClass):
 
     def test_monthlyOrder(self):
         time.sleep(2)
+        for i in range(2):
+            self.monthly_page.click_RightArrow()
         self.monthly_page.click_NationWideShop()
         self.monthly_page.click_indianSweet()
         self.monthly_page.click_monthly()
