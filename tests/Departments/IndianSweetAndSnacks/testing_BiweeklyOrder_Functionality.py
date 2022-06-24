@@ -38,6 +38,8 @@ class TesBIWEEKLYORDER(ui_test_class.UVXVXVIVClass):
 
     def test_biWeeklyOrder(self):
         time.sleep(2)
+        for i in range(2):
+            self.biweekly_page.click_RightArrow()
         self.biweekly_page.click_NationWideShop()
         self.biweekly_page.click_indianSweet()
         self.biweekly_page.click_biweekly()
