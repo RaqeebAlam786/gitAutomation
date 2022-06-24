@@ -24,6 +24,8 @@ class TesEDITITEM(ui_test_class.UVXVXVVIIClass):
 
     def edit(self):
         time.sleep(2)
+        for i in range(2):
+            self.edit_page.click_RightArrow()
         self.edit_page.click_NationWideShop()
         self.edit_page.click_indianSweet()
         self.edit_page.click_monthly()
