@@ -320,7 +320,7 @@ class Department:
     ThankYou = (By.XPATH, '//*[@id="innerlist-products"]/h1')
     Account = (By.XPATH, '//*[@id="searchhide"]/header/div[3]/span')
     SearchForProducts = (By.XPATH, '//*[@id="search_box"]')
-    LeftArrow = (By.XPATH, '//*[@id="searchhide"]/div[9]/div/div/i[1]/img')
+    LeftArrow = (By.XPATH, '//*[@id="searchhide"]//img[@alt="Left Arrow"]')
     rightArrow = (By.XPATH, '//*[@id="searchhide"]/div[6]/div/div/i[2]/img')
     rotiKIt = (By.XPATH, '//*[@id="searchhide"]/div[6]/div/div/div/div/a[7]/img')
     buildRotiBox = (By.XPATH, '//*[@id="searchhide"]/section[1]/div/div/div[2]/div[4]/form/button')
