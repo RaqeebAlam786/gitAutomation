@@ -25,7 +25,11 @@ class TesDEPARTMENT(ui_test_class.UVIIClass):
         cls.driver.quit()
 
     def tiffin(self):
-
+        time.sleep(5)
+        for i in range(3):
+            time.sleep(2)
+            self.depart_page.click_RightArrow()
+        time.sleep(1)
         self.depart_page.click_Tiffin()
         self.depart_page.click_KamdarTiffin()
         self.depart_page.select_VegThali()
