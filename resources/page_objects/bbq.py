@@ -22,7 +22,7 @@ class BBQKIT(BasePage):
 
     def click_MealKit(self):
         element = self.driver.find_element_by_css_selector(
-            '#searchhide > div.grocerySpecialSlider.clsFoodSpl.clslowspace > div > div > div > div > a:nth-child(14) > img')
+            '#searchhide > div.grocerySpecialSlider.clsFoodSpl.clslowspace > div > div > div > div > a:nth-child(15) > img')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_bbqKit(self):
