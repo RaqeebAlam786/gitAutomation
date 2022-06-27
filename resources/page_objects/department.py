@@ -362,7 +362,7 @@ class Dept(BasePage):
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_MakkahCafe(self):
-        element = self.driver.find_element_by_xpath('//*[@id="load_data"]/div[7]/a')
+        element = self.driver.find_element_by_xpath('//*[@id="load_data"]/div[8]/a')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_AddAlooSam(self):
