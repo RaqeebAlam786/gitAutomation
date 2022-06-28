@@ -30,7 +30,7 @@ class IndianGrocery(BasePage):
     def click_indianGrocery(self):
         self.driver.implicitly_wait(10)
         self.scroll_to_element(IndianGroceryBox.indianGrocery)
-        element = self.driver.find_element_by_css_selector('#searchhide > div.grocerySpecialSlider.clsFoodSpl.clslowspace > div > div > div > div > a:nth-child(13) > img')
+        element = self.driver.find_element_by_css_selector('#searchhide > div.grocerySpecialSlider.clsFoodSpl.clslowspace > div > div > div > div > a:nth-child(14) > img')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_weekly(self):
