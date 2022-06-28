@@ -667,7 +667,7 @@ class ChaiAndCoffee:
     monthlyLabel = (By.XPATH, '//*[@id="monthly"]/div[2]/p[2]')
     OnceLabel = (By.CLASS_NAME, 'tblinkfree')
     buildABox = (By.XPATH, '//*[@id="searchhide"]/section[1]/div/div/div[2]/div[4]/form/button')
-    indianChaiLabel = (By.XPATH, '/html/body/div[8]/ul/li[4]/h1')
+    indianChaiLabel = (By.XPATH, '/html/body/div[9]/ul/li[4]/h1')
     backToChaiCoffee = (By.XPATH, '/html/body/div[5]/ul/li[2]/a')
     subscription = (By.XPATH, '//*[@id="searchhide"]/section[1]/div/div/div[2]/div[1]/h2')
     collection = (By.XPATH, '//*[@id="searchhide"]/section[2]/div[1]/h3')
