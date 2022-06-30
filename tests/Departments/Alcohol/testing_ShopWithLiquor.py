@@ -66,8 +66,8 @@ class TesDEPARTMENT(ui_test_class.UVIIClass):
         self.assertEqual(self.actual2, AccountLabel)
 
 
-    def test_shopWithLiquor(self):
-        self.Liquor()
-        ThankYouLabel = self.depart_page.get_attribute(Department.ThankYou, 'innerHTML')
-        print(ThankYouLabel)
-        self.assertEqual(self.actual1, ThankYouLabel)
+#     def test_shopWithLiquor(self):
+#         self.Liquor()
+#         ThankYouLabel = self.depart_page.get_attribute(Department.ThankYou, 'innerHTML')
+#         print(ThankYouLabel)
+#         self.assertEqual(self.actual1, ThankYouLabel)
