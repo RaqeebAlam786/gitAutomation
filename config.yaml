@@ -9,6 +9,6 @@ portal_ui:
 
 #   base_url: http://www.uat.goquicklly.com/
   base_url: http://www.quicklly.com/
-  admin_user: Excellence Delivered
+#   admin_user: Excellence Delivered
   admin_password: 1234
 
