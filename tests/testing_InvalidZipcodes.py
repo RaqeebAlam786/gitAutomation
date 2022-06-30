@@ -9,7 +9,7 @@ class TesIZ(ui_test_class.UVXVClass):
     invalid_page: InvalidZipcodes
 
     expected = "Please fill out this field."
-    expected1 = ""
+    expected1 = "Please match the requested format."
 
     @classmethod
     def setUpClass(cls):
