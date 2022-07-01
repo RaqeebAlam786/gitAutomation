@@ -24,11 +24,11 @@ class Sauces(BasePage):
     def click_MealKit(self):
         self.driver.implicitly_wait(20)
         element = self.driver.find_element_by_css_selector(
-            '#searchhide > div.grocerySpecialSlider.clsFoodSpl.clslowspace > div > div > div > div > a:nth-child(15) > img')
+            '#searchhide > div.grocerySpecialSlider.clsFoodSpl.clslowspace > div > div > div > div > a:nth-child(14) > img')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_Oragnicsauces(self):
-        element = self.driver.find_element_by_xpath('//*[@id="home"]/div/div[11]/div/a/div/img')
+        element = self.driver.find_element_by_xpath('//*[@id="home"]/div/div[10]/div/a/div/img')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_BayArea(self):
