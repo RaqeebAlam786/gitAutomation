@@ -282,7 +282,7 @@ class Department:
     BBQKit = (By.XPATH, '//*[@id="searchhide"]/div[4]/div/div/div/div/a[3]/img')
     chickenTikkaImage = (By.XPATH, '//*[@id="img_132523"]')
     AddTikkaToCart = (By.XPATH, '//*[@id="searchhide"]/div[2]/div/div/div[2]/div[2]/div[1]/div[2]/div/a')
-    Catering = (By.XPATH, '//*[@id="searchhide"]//a[19]//img[@alt="Catering"]')
+    Catering = (By.XPATH, '//*[@id="searchhide"]//img[@alt="Catering"]')
     HyderabadHouse = (By.XPATH, '//*[@id="Catering"]/div/div[1]/a')
     AddBeefFry = (By.CSS_SELECTOR, '#searchhide > div.clsFoodStore > div > div > div:nth-child(1) > a')
     AddToCartBeef = (By.XPATH, '//*[@id="dvDialog-Custom"]/div/div[2]/a')
