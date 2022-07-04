@@ -70,4 +70,4 @@ class TesDEPARTMENT(ui_test_class.UVIIClass):
         self.Liquor()
         ThankYouLabel = self.depart_page.get_attribute(Department.ThankYou, 'innerHTML')
         print(ThankYouLabel)
-        slf.assertEqual(self.actual1, ThankYouLabel)
+        self.assertEqual(self.actual1, ThankYouLabel)
