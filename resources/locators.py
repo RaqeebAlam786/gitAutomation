@@ -269,7 +269,7 @@ class Department:
     Seeti = (By.XPATH, '//*[@id="minicart"]/div/div[1]/div/div/div/a[3]')
     delete = (By.XPATH, '//*[@id="lnk_cart_[pid]"]')
     GoFresh = (By.XPATH, '//*[@id="searchhide"]/div[12]/div[1]/div/div/a[2]/img')
-    AddToCartLG = (By.XPATH, '//*[@id="searchhide"]/div[10]/div/section[2]/div/a[1]')
+    AddToCartLG = (By.XPATH, '//*[@id="searchhide"]/div[11]/div/section[2]/div/a[1]')
     addSecondItem = (By.XPATH, '//*[@id="img_51875"]')
     AddToCartP = (By.XPATH, '//*[@id="searchhide"]/div[10]/div/section[2]/div/a[1]')
 #     food = (By.XPATH, '//*[@id="searchhide"]/div[10]/div/div/div/div/a[21]/img')
