@@ -53,6 +53,10 @@ class TesINDIANBBQKIT(ui_test_class.UVXVXVIClass):
         self.bbq_page.EnterEmail("testaccount@quicklly.com")
         self.bbq_page.EnterPass("123456")
         self.bbq_page.click_login()
+        time.sleep(2)
+        alert = self.driver.switch_to.alert
+        alert.accept()
+        time.sleep(2)
 
     def test_EnterZipCode(self):
         self.bbq_page.zip("60611")
@@ -64,6 +68,7 @@ class TesINDIANBBQKIT(ui_test_class.UVXVXVIClass):
 
 #    @allure.severity(allure.severity_level.NORMAL)
     def test_clickIndian(self):
+        time.sleep(5)
         for i in range(9):
             time.sleep(2)
             self.bbq_page.click_RightArrow()
