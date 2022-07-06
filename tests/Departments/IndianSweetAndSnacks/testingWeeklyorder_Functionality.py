@@ -34,9 +34,13 @@ class TesWEEKLYORDER(ui_test_class.UVXVXVIIIClass):
         self.weekly_page.EnterEmail("testaccount@quicklly.com")
         self.weekly_page.EnterPass("123456")
         self.weekly_page.click_login()
+        time.sleep(2)
+        alert = self.driver.switch_to.alert
+        alert.accept()
+        time.sleep(2)
 
     def test_weeklyOrder(self):
-        time.sleep(2)
+        time.sleep(5)
         for i in range(2):
             self.weekly_page.click_RightArrow()
         self.weekly_page.click_NationWideShop()
