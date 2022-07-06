@@ -34,9 +34,13 @@ class TesONETIMEORDER(ui_test_class.UVXVXVIIClass):
         self.one_page.EnterEmail("testaccount@quicklly.com")
         self.one_page.EnterPass("123456")
         self.one_page.click_login()
+        time.sleep(2)
+        alert = self.driver.switch_to.alert
+        alert.accept()
+        time.sleep(2)
 
     def test_oneTimeOrder(self):
-        time.sleep(2)
+        time.sleep(5)
         for i in range(2):
             self.one_page.click_RightArrow()
         self.one_page.click_NationWideShop()
