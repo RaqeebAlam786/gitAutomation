@@ -73,6 +73,10 @@ class TesINDIANSAUCES(ui_test_class.UVXVXVClass):
         self.sauces_page.EnterEmail("testaccount@quicklly.com")
         self.sauces_page.EnterPass("123456")
         self.sauces_page.click_login()
+        time.sleep(2)
+        alert = self.driver.switch_to.alert
+        alert.accept()
+        time.sleep(2)
 
     def test_EnterZipCode(self):
         self.sauces_page.zip("60611")
@@ -83,6 +87,7 @@ class TesINDIANSAUCES(ui_test_class.UVXVXVClass):
         self.assertEqual(self.actual3, search)
 
     def test_clickIndian(self):
+        time.sleep(5)
         for i in range(8):
             time.sleep(2)
             self.sauces_page.click_RightArrow()
