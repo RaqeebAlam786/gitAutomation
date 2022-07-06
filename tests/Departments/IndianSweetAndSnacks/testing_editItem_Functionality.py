@@ -23,7 +23,7 @@ class TesEDITITEM(ui_test_class.UVXVXVVIIClass):
         cls.driver.quit()
 
     def edit(self):
-        time.sleep(2)
+        time.sleep(5)
         for i in range(2):
             self.edit_page.click_RightArrow()
         self.edit_page.click_NationWideShop()
@@ -48,6 +48,10 @@ class TesEDITITEM(ui_test_class.UVXVXVVIIClass):
         self.edit_page.EnterEmail("testaccount@quicklly.com")
         self.edit_page.EnterPass("123456")
         self.edit_page.click_login()
+        time.sleep(2)
+        alert = self.driver.switch_to.alert
+        alert.accept()
+        time.sleep(2)
 
     def test_editItem(self):
         self.edit()
