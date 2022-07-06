@@ -27,7 +27,7 @@ class TesDEPARTMENT(ui_test_class.UVIIClass):
 
 
     def Grocery(self):
-        time.sleep(2)
+        time.sleep(5)
         self.depart_page.EnterElementForSearch("lemon grass")
         self.depart_page.click_SearchButton()
         self.depart_page.click_additem()
@@ -57,6 +57,8 @@ class TesDEPARTMENT(ui_test_class.UVIIClass):
         self.depart_page.EnterPass("123456")
         self.depart_page.click_login()
         time.sleep(2)
+        alert = self.driver.switch_to.alert
+        alert.accept()
         AccountLabel = self.depart_page.get_attribute(Department.Account, 'innerHTML')
         print(AccountLabel)
         self.assertEqual(self.actual2, AccountLabel)
