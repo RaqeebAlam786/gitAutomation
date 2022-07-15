@@ -17,7 +17,7 @@ class GroceryCategories(BasePage):
         self.click(Category.submit_zip)
 
     def click_unbeatable(self):
-        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/div[10]/div[1]/div/div/a[1]/img')
+        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]//img[@alt="Unbeatable Deals"]')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_GoFresh(self):
@@ -25,11 +25,11 @@ class GroceryCategories(BasePage):
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_Grocery(self):
-        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/div[10]/div[1]/div/div/a[3]')
+        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]//img[@alt="GROCERY"]')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_Meat(self):
-        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/div[10]/div[1]/div/div/a[4]/img')
+        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]//img[@alt="MEAT PRODUCTS"]')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_Beverages(self):
@@ -38,7 +38,7 @@ class GroceryCategories(BasePage):
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_Organic(self):
-        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/div[10]/div[1]/div/div/a[6]/img')
+        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]//img[@alt="ORGANIC"]')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_personalCare(self):
@@ -46,7 +46,7 @@ class GroceryCategories(BasePage):
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_Household(self):
-        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]/div[10]/div[1]/div/div/a[8]/img')
+        element = self.driver.find_element_by_xpath('//*[@id="searchhide"]//img[@alt="HOUSEHOLD"]')
         self.driver.execute_script("arguments[0].click();", element)
 
     def click_Weekly(self):
